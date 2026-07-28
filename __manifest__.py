@@ -6,5 +6,6 @@
     'category': 'Purchases',
     'description': 'Agrega campo de cantidad pendiente al reporte de compras',
     'data': [],
+    'license': 'LGPL-3',
     'installable': True,
 }

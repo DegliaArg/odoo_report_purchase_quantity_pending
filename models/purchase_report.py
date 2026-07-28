@@ -9,7 +9,7 @@ class PurchaseReport(models.Model):
         help='Diferencia entre la cantidad ordenada y la cantidad recibida.',
         compute='_compute_difference_quantity',
         store=False,
-        group_operator='sum',
+        aggregator='sum',
     )
 
     # NUEVO: Precio unitario = Total / Cantidad ordenada
@@ -19,7 +19,7 @@ class PurchaseReport(models.Model):
         help='Total / Cantidad ordenada',
         compute='_compute_unit_price',
         store=False,
-        group_operator='avg',  # promedio simple en agrupaciones
+        aggregator='avg',  # promedio simple en agrupaciones
         digits='Product Price',
     )
 
